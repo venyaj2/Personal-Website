@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Venya Joshi</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-section">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="DowntownDash - Unreal Editor 2023-12-06 20-14-45.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3><a href="https://gitlab.engr.illinois.edu/save/dowtown-dash">Project 1</a></h3>
+                    <h3>Downtown Dash</h3>
+                    <p>Description of project 1</p>
+                    <a href="#">View Details</a>
+                </div>
+
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="video1004194179.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3><a href="https://github.com/ashnaarya/VenmoViz">Project 2</a></h3>
+                    <h3>VenmoViz</h3>
+                    <p>Description of project 2</p>
+                    <a href="#">View Details</a>
+                </div>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video1004194179.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3><a href="https://github.com/ashnaarya/MoodTracker">Project 2</a></h3>
+                <h3>MoodTracker</h3>
+                <p>Description of project 2</p>
+                <a href="#">View Details</a>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="paper1_thumbnail.jpg" alt="Paper 1 Thumbnail">
+                <h3> Emerging Identity of Chinese American: From Adolescence to Late Adulthood</h3>
+                <p>Description of Paper 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="papers\Social Development.pdf" target="_blank">Read Paper</a>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="paper2_thumbnail.jpg" alt="Paper 2 Thumbnail">
+                <h3>Paper 2 Title</h3>
+                <p>Description of Paper 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="path_to_paper2_pdf" target="_blank">Read Paper</a>
+            </div>
+
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Venya Joshi - All rights reserved</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
