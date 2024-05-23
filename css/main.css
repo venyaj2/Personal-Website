@@ -1,0 +1,96 @@
+body, html {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #faf7f5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#hero {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow content */
+    background-image: url('../images/HomepageGrad.jpg'); /* Add the background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+}
+
+.hero-text {
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    transform: translateY(-80%);
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    transform: translateY(500%);
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 50px;
+    transition: all 0.5s ease; /* Add smooth transition effect */
+    transform: translateY(300%)
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#fade-in-text,
+#fade-in-text2,
+#fade-in-btn {
+    opacity: 0; /* Initially hide the elements */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* Fade in to full opacity */
+    }
+}
+
+/* Apply the fade-in animation to each element */
+#fade-in-text {
+    animation: fade-in 4s forwards;
+}
+
+#fade-in-text2 {
+    animation: fade-in 3s 1s forwards; /* Delay the start of the animation by 1 second */
+}
+
+#fade-in-btn {
+    animation: fade-in 2s 2s forwards; /* Delay the start of the animation by 2 seconds */
+}
