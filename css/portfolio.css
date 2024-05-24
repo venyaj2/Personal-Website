@@ -81,7 +81,7 @@
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #655e53;
     text-decoration: none;
     cursor: pointer;
 }
@@ -91,6 +91,7 @@
     opacity: 0; /* Set initial opacity to 0 */
     animation: fadeIn 3s forwards; /* Apply fade-in animation */
     animation-delay: 0.5s; /* Delay the animation */
+    color: #655e53;
 }
 
 @keyframes fadeIn {
@@ -106,5 +107,9 @@
 #portfolio h2 {
     font-size: 3rem; /* Adjust font size as needed */
     margin-bottom: 30px; /* Add some bottom margin */
-    color: #333; /* Text color */
+    color: #655e53; /* Text color */
+}
+
+body {
+   color: #655e53;
 }
