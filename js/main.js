@@ -11,4 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             document.getElementById('footer').innerHTML = data;
         });
+
 });
