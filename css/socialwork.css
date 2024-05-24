@@ -1,0 +1,17 @@
+.portfolio-grid {
+    list-style: none; /* Remove bullet points */
+    padding: 20; /* Remove default padding */
+    margin: 20; /* Remove default margin */
+}
+
+.portfolio-item {
+    margin-bottom: 20px; /* Add some spacing between portfolio items */
+}
+
+.portfolio-item img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+#author-info {
+    padding: 20px; /* Adjust the padding value as needed */
+}
